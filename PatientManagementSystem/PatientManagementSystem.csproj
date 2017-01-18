@@ -1,0 +1,472 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1744A4DE-FAFA-4F46-A1B7-6F8554A9C41D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PatientManagementSystem</RootNamespace>
+    <AssemblyName>PatientManagementSystem</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="SecuGen.FDxSDKPro.Windows">
+      <HintPath>..\..\Matching\bin\Release\SecuGen.FDxSDKPro.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DoctorInfoDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DoctorInfoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmAppointReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAppointReport.Designer.cs">
+      <DependentUpon>frmAppointReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreateUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreateUsers.Designer.cs">
+      <DependentUpon>frmCreateUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDoctorsAppointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDoctorsAppointment.Designer.cs">
+      <DependentUpon>frmDoctorsAppointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGuardianReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGuardianReport.Designer.cs">
+      <DependentUpon>frmGuardianReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPatientReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPatientReport.Designer.cs">
+      <DependentUpon>frmPatientReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVisitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVisitor.Designer.cs">
+      <DependentUpon>frmVisitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatientMgtSystemAppointment.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PatientMgtSystemAppointment.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PatientMgtSystemDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PatientMgtSystemDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PatientMgtSystemPatientReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PatientMgtSystemPatientReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmDoctorsReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDoctorsReport.Designer.cs">
+      <DependentUpon>frmDoctorsReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGuardianRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGuardianRegistration.Designer.cs">
+      <DependentUpon>frmGuardianRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIndexForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIndexForm.Designer.cs">
+      <DependentUpon>frmIndexForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPatientBills.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPatientBills.Designer.cs">
+      <DependentUpon>frmPatientBills.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPatientDiagnosisInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPatientDiagnosisInfo.Designer.cs">
+      <DependentUpon>frmPatientDiagnosisInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPatientInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPatientInvoice.Designer.cs">
+      <DependentUpon>frmPatientInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPatientRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPatientRegistration.Designer.cs">
+      <DependentUpon>frmPatientRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDoctorRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDoctorRegistration.Designer.cs">
+      <DependentUpon>frmDoctorRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPatientRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPatientRoom.Designer.cs">
+      <DependentUpon>frmPatientRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPriviledges.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPriviledges.Designer.cs">
+      <DependentUpon>frmPriviledges.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVisitorsRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVisitorsRegistration.Designer.cs">
+      <DependentUpon>frmVisitorsRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPatientPrescription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPatientPrescription.Designer.cs">
+      <DependentUpon>frmPatientPrescription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatientMgtSystemDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PatientMgtSystemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PatientMgtSystemDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PatientMgtSystemDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PatientMgtSystemVisitor.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PatientMgtSystemVisitor.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Validators.cs" />
+    <EmbeddedResource Include="doctorInfo.rdlc" />
+    <EmbeddedResource Include="frmAppointReport.resx">
+      <DependentUpon>frmAppointReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreateUsers.resx">
+      <DependentUpon>frmCreateUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDoctorRegistration.resx">
+      <DependentUpon>frmDoctorRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDoctorsAppointment.resx">
+      <DependentUpon>frmDoctorsAppointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGuardianReport.resx">
+      <DependentUpon>frmGuardianReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPatientReport.resx">
+      <DependentUpon>frmPatientReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVisitor.resx">
+      <DependentUpon>frmVisitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="frmDoctorsReport.resx">
+      <DependentUpon>frmDoctorsReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGuardianRegistration.resx">
+      <DependentUpon>frmGuardianRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIndexForm.resx">
+      <DependentUpon>frmIndexForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPatientBills.resx">
+      <DependentUpon>frmPatientBills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPatientDiagnosisInfo.resx">
+      <DependentUpon>frmPatientDiagnosisInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPatientInvoice.resx">
+      <DependentUpon>frmPatientInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPatientRegistration.resx">
+      <DependentUpon>frmPatientRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPatientRoom.resx">
+      <DependentUpon>frmPatientRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPriviledges.resx">
+      <DependentUpon>frmPriviledges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVisitorsRegistration.resx">
+      <DependentUpon>frmVisitorsRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPatientPrescription.resx">
+      <DependentUpon>frmPatientPrescription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="Report3.rdlc" />
+    <EmbeddedResource Include="Report4.rdlc" />
+    <None Include="app.config" />
+    <None Include="DoctorInfoDataSet.xsc">
+      <DependentUpon>DoctorInfoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DoctorInfoDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>DoctorInfoDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DoctorInfoDataSet.xss">
+      <DependentUpon>DoctorInfoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PatientMgtSystemAppointment.xsc">
+      <DependentUpon>PatientMgtSystemAppointment.xsd</DependentUpon>
+    </None>
+    <None Include="PatientMgtSystemAppointment.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PatientMgtSystemAppointment.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PatientMgtSystemAppointment.xss">
+      <DependentUpon>PatientMgtSystemAppointment.xsd</DependentUpon>
+    </None>
+    <None Include="PatientMgtSystemDataSet.xsc">
+      <DependentUpon>PatientMgtSystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PatientMgtSystemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PatientMgtSystemDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PatientMgtSystemDataSet.xss">
+      <DependentUpon>PatientMgtSystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PatientMgtSystemDataSet1.xsc">
+      <DependentUpon>PatientMgtSystemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PatientMgtSystemDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>PatientMgtSystemDataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="PatientMgtSystemDataSet1.xss">
+      <DependentUpon>PatientMgtSystemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PatientMgtSystemDataSet2.xsc">
+      <DependentUpon>PatientMgtSystemDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="PatientMgtSystemDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>PatientMgtSystemDataSet2.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="PatientMgtSystemDataSet2.xss">
+      <DependentUpon>PatientMgtSystemDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="PatientMgtSystemPatientReport.xsc">
+      <DependentUpon>PatientMgtSystemPatientReport.xsd</DependentUpon>
+    </None>
+    <None Include="PatientMgtSystemPatientReport.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PatientMgtSystemPatientReport.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PatientMgtSystemPatientReport.xss">
+      <DependentUpon>PatientMgtSystemPatientReport.xsd</DependentUpon>
+    </None>
+    <None Include="PatientMgtSystemVisitor.xsc">
+      <DependentUpon>PatientMgtSystemVisitor.xsd</DependentUpon>
+    </None>
+    <None Include="PatientMgtSystemVisitor.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PatientMgtSystemVisitor.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PatientMgtSystemVisitor.xss">
+      <DependentUpon>PatientMgtSystemVisitor.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Spy.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User group.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toolb.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User group1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICNTROTL.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dollar.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User group2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Indexpage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-210.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-211.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-212.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-213.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\People_White.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reader_White.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hospital-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Guest.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hospital management.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Reports\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
